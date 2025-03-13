@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phyo Zin Oo - Graphic Designer Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+            min-height: 100vh;
+        }
+    </style>
+</head>
+<body class="relative">
+    <!-- Navigation -->
+    <nav class="fixed w-full top-4 z-50">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto bg-white/20 backdrop-blur-md rounded-2xl shadow-lg border border-white/30 px-6 py-3">
+                <div class="flex items-center justify-between">
+                    <a href="#" class="text-2xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+                        Phyo Zin Oo
+                    </a>
+                    <div class="hidden md:flex space-x-8">
+                        <a href="#home" class="hover:text-purple-600 transition">Home</a>
+                        <a href="#about" class="hover:text-purple-600 transition">About</a>
+                        <a href="#projects" class="hover:text-purple-600 transition">Projects</a>
+                        <a href="#contact" class="hover:text-purple-600 transition">Contact</a>
+                    </div>
+                    <button class="md:hidden" id="menuBtn">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="md:hidden hidden mt-2" id="mobileMenu">
+            <div class="container mx-auto px-6">
+                <div class="max-w-4xl mx-auto bg-white/20 backdrop-blur-md rounded-2xl shadow-lg border border-white/30 px-4 py-3 space-y-3">
+                    <a href="#home" class="block hover:text-purple-600 transition">Home</a>
+                    <a href="#about" class="block hover:text-purple-600 transition">About</a>
+                    <a href="#projects" class="block hover:text-purple-600 transition">Projects</a>
+                    <a href="#contact" class="block hover:text-purple-600 transition">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-32 pb-20">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col items-center text-center">
+                <img src="./assets/phyo_zin_oo.jpg" alt="Phyo Zin Oo" class="w-48 h-48 rounded-full object-cover shadow-lg mb-8">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Phyo Zin Oo</h1>
+                <h2 class="text-xl md:text-2xl text-gray-600 mb-6">Graphic Designer | Freelancer</h2>
+                <p class="text-gray-600 max-w-2xl mb-8">Creating stunning visual experiences that captivate and inspire. Currently working remotely at AIS OPSEEKR.</p>
+                <a href="#projects" class="bg-gradient-to-r from-purple-600 to-pink-600 text-white px-8 py-3 rounded-full hover:opacity-90 transition">View My Work</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white/50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">About Me</h2>
+            <div class="max-w-3xl mx-auto">
+                <p class="text-gray-700 mb-6">
+                    As a passionate Graphic Designer, I specialize in creating visually compelling designs that tell stories and engage audiences. With a keen eye for detail and a creative mindset, I help brands stand out in today's digital landscape.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="font-bold mb-4">Skills</h3>
+                        <ul class="space-y-2">
+                            <li>Adobe Creative Suite</li>
+                            <li>Brand Identity Design</li>
+                            <li>UI/UX Design</li>
+                            <li>Motion Graphics</li>
+                            <li>Digital Illustration</li>
+                        </ul>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="font-bold mb-4">Experience</h3>
+                        <div class="space-y-4">
+                            <div>
+                                <p class="font-semibold">AIS OPSEEKR</p>
+                                <p class="text-gray-600">Graphic Designer (Remote)</p>
+                                <p class="text-sm text-gray-500">2023 - Present</p>
+                            </div>
+                            <div>
+                                <p class="font-semibold">Freelance</p>
+                                <p class="text-gray-600">Independent Designer</p>
+                                <p class="text-sm text-gray-500">2021 - Present</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Featured Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <a href="project1.html" class="group">
+                    <div class="bg-white rounded-lg overflow-hidden shadow-lg transition transform hover:-translate-y-1">
+                        <img src="./assets/project01_pzo.jpg" alt="Brand Redesign" class="w-full h-64 object-contain">
+                        <div class="p-6">
+                            <h3 class="font-bold text-xl mb-2">Eco-Friendly Brand Redesign</h3>
+                            <p class="text-gray-600">Complete brand overhaul for a sustainable product line</p>
+                        </div>
+                    </div>
+                </a>
+                <!-- Project 2 -->
+                <a href="project2.html" class="group">
+                    <div class="bg-white rounded-lg overflow-hidden shadow-lg transition transform hover:-translate-y-1">
+                        <img src="./assets/project02_pzo.jpg" alt="Social Media Campaign" class="w-full h-64 object-contain">
+                        <div class="p-6">
+                            <h3 class="font-bold text-xl mb-2">Social Media Campaign</h3>
+                            <p class="text-gray-600">Engaging visual content for a major product launch</p>
+                        </div>
+                    </div>
+                </a>
+                <!-- Project 3 -->
+                <a href="project3.html" class="group">
+                    <div class="bg-white rounded-lg overflow-hidden shadow-lg transition transform hover:-translate-y-1">
+                        <img src="./assets/project03_pzo.jpg" alt="App Design" class="w-full h-64 object-contain">
+                        <div class="p-6">
+                            <h3 class="font-bold text-xl mb-2">Mobile App UI Design</h3>
+                            <p class="text-gray-600">Modern and intuitive interface design for a fitness app</p>
+                        </div>
+                    </div>
+                </a>
+                <!-- Project 4 -->
+                <a href="project4.html" class="group">
+                    <div class="bg-white rounded-lg overflow-hidden shadow-lg transition transform hover:-translate-y-1">
+                        <img src="./assets/project04_pzo.jpg" alt="Motion Graphics" class="w-full h-64 object-contain">
+                        <div class="p-6">
+                            <h3 class="font-bold text-xl mb-2">Motion Graphics Series</h3>
+                            <p class="text-gray-600">Animated promotional content for social media</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white/50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Get in Touch</h2>
+            <div class="max-w-2xl mx-auto text-center">
+                <p class="text-gray-600 mb-8">Interested in working together? Let's discuss your project!</p>
+                <div class="space-y-4">
+                    <p class="flex items-center justify-center gap-2">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                        </svg>
+                        <a href="mailto:phyozinoo228697@gmail.com" class="hover:text-purple-600">phyozinoo228697@gmail.com</a>
+                    </p>
+                    <p class="flex items-center justify-center gap-2">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                        </svg>
+                        <a href="tel:7539282084" class="hover:text-purple-600">753-928-2084</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white/80 py-6">
+        <div class="container mx-auto px-6 text-center text-gray-600">
+            <p>&copy; 2025 Phyo Zin Oo. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
